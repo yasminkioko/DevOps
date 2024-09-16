@@ -22,3 +22,12 @@ class operations:
     
     def cos(x):
         return math.acos(x)
+    
+    def sen(x):
+        return math.asin(x)
+    
+    def tan(x):
+        return math.atan(x)
+    
+    def tan2(x,y):
+        return math.atan2(x,y)
