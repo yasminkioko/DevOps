@@ -16,3 +16,6 @@ class operations:
     
     def pow(x,y):
         return math.pow(x,y)
+
+    def sqrt(x):
+        return math.sqrt(x)
