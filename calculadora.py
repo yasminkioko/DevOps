@@ -25,3 +25,6 @@ class operations:
     
     def sen(x):
         return math.asin(x)
+    
+    def tan(x):
+        return math.atan(x)
