@@ -1,0 +1,26 @@
+name: Teste Docker
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-and-test-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: false
+          tags: yasminkioko/calc:${{ github.sha }}
+
+      - name: Test with Docker
+        run: |
+          docker run -v $(pwd):/app -w /app yasminkioko/calc:${{ github.sha }} /bin/bash -c "pip install -r requirements.txt && python -m unittest teste.py"
