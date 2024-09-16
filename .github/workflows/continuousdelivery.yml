@@ -36,6 +36,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Build Docker image
+        uses: docker/build-push-action@v4
+        with:
+          context: .
+          push: false
+          tags: yasminkioko/calc:${{ github.sha }}
+
       - name: Teste
         run: |
           docker run -v $(pwd):/app -w /app yasminkioko/calc:${{ github.sha }} /bin/bash -c "pip install -r requirements.txt && python -m unittest teste.py"
