@@ -20,14 +20,14 @@ class operations:
     def sqrt(x):
         return math.sqrt(x)
     
-    def cos(x):
+    def acos(x):
         return math.acos(x)
     
-    def sen(x):
+    def asen(x):
         return math.asin(x)
     
-    def tan(x):
+    def atan(x):
         return math.atan(x)
     
-    def tan2(x,y):
+    def atan2(x,y):
         return math.atan2(x,y)
