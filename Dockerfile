@@ -7,4 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-CMD [ "python", "./teste.py" ]
+CMD [ "python", "./calculadora.py" ]
