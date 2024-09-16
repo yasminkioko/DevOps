@@ -1,13 +1,18 @@
-class operacoes:
+import math
 
-    def soma(self, x,y):
+class operations:
+
+    def sum(self, x,y):
         return x+y
 
-    def subtacao(self, x,y):
+    def subtraction(self, x,y):
         return x-y
 
-    def muntiplicacao(self, x,y):
+    def muntiplication(self, x,y):
         return x*y
 
-    def divisao(self, x,y):
+    def division(self, x,y):
         return x/y if y != 0 else None
+    
+    def pow(x,y):
+        return math.pow(x,y)
