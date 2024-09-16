@@ -1,3 +1,5 @@
+import math
+
 class operations:
 
     def sum(self, x,y):
@@ -11,3 +13,6 @@ class operations:
 
     def division(self, x,y):
         return x/y if y != 0 else None
+    
+    def pow(x,y):
+        return math.pow(x,y)
