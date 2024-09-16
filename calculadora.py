@@ -22,3 +22,6 @@ class operations:
     
     def cos(x):
         return math.acos(x)
+    
+    def sen(x):
+        return math.asin(x)
