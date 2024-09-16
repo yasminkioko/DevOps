@@ -19,3 +19,6 @@ class operations:
 
     def sqrt(x):
         return math.sqrt(x)
+    
+    def cos(x):
+        return math.acos(x)
